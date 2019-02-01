@@ -2,7 +2,7 @@ function Pizza (size, veggies, meats, cost) {
   this.size = size;
   this.veggies = toppings;
   this.meats = meats;
-  this.cost = [];
+  this.cost = []
 }
 
 
@@ -11,14 +11,16 @@ Pizza.prototype.total = function () {
     this.cost = 10;
   }else if(this.size ==="large") {
     this.cost = 15;
-  }else(this.size ==="xl") {
+  }else if(this.size ==="xl") {
     this.cost = 20;
+    console.log(this.cost);
   }
   for(var i = 0; i < this.veggies.length; i++) {
     this.cost += 0.5;
   }
   for(var i = 0; i < this.meats.length; i++) {
     this.cost += 1;
+    console.log(this.cost);
   }
   return this.cost;
 }
@@ -33,10 +35,9 @@ $(document).ready(function() {
   var name = $("#name").val();
   var size = $("#size").val();
   var veggies = $("#veggies").val();
-  var carnes = $("#carnes").val();
+  var meats = $("#meats").val();
 
   $("#results").show();
 
-}
   });
 });
