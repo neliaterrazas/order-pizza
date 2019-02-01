@@ -1,18 +1,28 @@
+function PizzaOrder () {
+  this.pie = [],
+  this.details = 0
+}
+
+PizzaOrder.prototype.newPie = function(pies) {
+  pie.order = this.assignOrder();
+  this.pie.push(pies);
+}
+
 function Pizza (size, veggies, meats, cost) {
-  this.size = size;
-  this.veggies = toppings;
-  this.meats = meats;
-  this.cost = []
+  this.size = size,
+  this.veggies = veggies,
+  this.meats = meats,
+  this.cost = []  
 }
 
 
 Pizza.prototype.total = function () {
   if(this.size ==="medium") {
-    this.cost = 10;
+    this.cost += 10;
   }else if(this.size ==="large") {
-    this.cost = 15;
+    this.cost += 15;
   }else if(this.size ==="xl") {
-    this.cost = 20;
+    this.cost += 20;
     console.log(this.cost);
   }
   for(var i = 0; i < this.veggies.length; i++) {
@@ -26,16 +36,21 @@ Pizza.prototype.total = function () {
 }
 
 
+
+function displayMyPizza(itsMyPizza) {
+  var
+}
+
 $(document).ready(function() {
 
   $("form#formOne").submit(function(event) {
-
   event.preventDefault();
+  var name = $("input#name").val();
+  var size = $("input#size").val();
+  var veggies = $("input#veggies").val();
+  var meats = $("input#meats").val();
+  var newPizza = newPizza(name, size, veggies, meats);
 
-  var name = $("#name").val();
-  var size = $("#size").val();
-  var veggies = $("#veggies").val();
-  var meats = $("#meats").val();
 
   $("#results").show();
 
