@@ -1,4 +1,4 @@
-function Pizza (size, toppings, cost) {
+function Pizza (size, veggies, meats, cost) {
   this.size = size;
   this.veggies = toppings;
   this.meats = meats;
@@ -7,6 +7,16 @@ function Pizza (size, toppings, cost) {
 
 // var classicCheese = new Pizza ();
 // var classicPepperoni = new Pizza ();
+Pizza.prototype.total = function () {
+  if(this.size ==="medium") {
+    this.cost = 10;
+  }else if(this.size ==="large") {
+    this.cost = 15;
+  }else {
+    this.cost = 20;
+  }
+  
+}
 
 
 $(document).ready(function() {
