@@ -34,9 +34,12 @@ Pizza.prototype.total = function () {
   return this.cost;
 }
 
-//UI
+Pizza.prototype.yourOrder = function () {
+  return this.size + " " + this.veggies + " " + this.meats + " " + this.cost;
+}
 
 
+var pizzaOrder = new PizzaOrder();
 
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
