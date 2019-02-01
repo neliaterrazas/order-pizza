@@ -2,20 +2,25 @@ function Pizza (size, veggies, meats, cost) {
   this.size = size;
   this.veggies = toppings;
   this.meats = meats;
-  this.cost = cost;
+  this.cost = [];
 }
 
-// var classicCheese = new Pizza ();
-// var classicPepperoni = new Pizza ();
+
 Pizza.prototype.total = function () {
   if(this.size ==="medium") {
     this.cost = 10;
   }else if(this.size ==="large") {
     this.cost = 15;
-  }else {
+  }else(this.size ==="xl") {
     this.cost = 20;
   }
-  
+  for(var i = 0; i < this.veggies.length; i++) {
+    this.cost += 0.5;
+  }
+  for(var i = 0; i < this.meats.length; i++) {
+    this.cost += 1;
+  }
+  return this.cost;
 }
 
 
