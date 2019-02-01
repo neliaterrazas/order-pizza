@@ -4,7 +4,7 @@ function PizzaOrder () {
 }
 
 PizzaOrder.prototype.newPie = function(pies) {
-  pie.order = this.assignOrder();
+  pie.details = this.assignDetails();
   this.pie.push(pies);
 }
 
@@ -12,9 +12,8 @@ function Pizza (size, veggies, meats, cost) {
   this.size = size,
   this.veggies = veggies,
   this.meats = meats,
-  this.cost = []  
+  this.cost = 0
 }
-
 
 Pizza.prototype.total = function () {
   if(this.size ==="medium") {
@@ -35,14 +34,11 @@ Pizza.prototype.total = function () {
   return this.cost;
 }
 
+//UI
 
 
-function displayMyPizza(itsMyPizza) {
-  var
-}
 
 $(document).ready(function() {
-
   $("form#formOne").submit(function(event) {
   event.preventDefault();
   var name = $("input#name").val();
