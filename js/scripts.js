@@ -1,11 +1,15 @@
 function PizzaOrder () {
   this.pie = [],
-  this.details = 0
+  this.currentId = 0
 }
 
 PizzaOrder.prototype.newPie = function(pies) {
-  pie.details = this.assignDetails();
+  pie.id = this.assignId();
   this.pie.push(pies);
+}
+PizzaOrder.prototype.assignId = function () {
+  this.currentId += 1;
+  return this.currentId;
 }
 
 function Pizza (size, veggies, meats, cost) {
@@ -41,7 +45,12 @@ Pizza.prototype.yourOrder = function () {
 
 var pizzaOrder = new PizzaOrder();
 
-function displayPie
+function displayPie(PizzaOrderComplete) {
+  var yourOrderIsReady = $("#results");
+  var htmlForYou = " ";
+  PizzaOrderComplete.pie.forEach(function(Pizza) {
+    htmlForYou +=  "<li "
+}
 
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
@@ -52,6 +61,7 @@ $(document).ready(function() {
   var meats = $("input#meats").val();
   var newPizza = newPizza(name, size, veggies, meats);
   pizzaOrder.newPie(newPizza);
+  displayPie(PizzaOrder);
 
 
 
