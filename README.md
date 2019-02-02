@@ -17,7 +17,7 @@ _This webpage takes user input to customize a simple pizza. Basic pizza includes
 
 ## Known Bugs
 
-_This current version does not display your order after submitting_
+_This current version does not display your order after submitting; however, we do believe it is there._
 
 ## Support and contact details
 
