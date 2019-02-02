@@ -41,6 +41,8 @@ Pizza.prototype.yourOrder = function () {
 
 var pizzaOrder = new PizzaOrder();
 
+function displayPie
+
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
   event.preventDefault();
@@ -49,6 +51,8 @@ $(document).ready(function() {
   var veggies = $("input#veggies").val();
   var meats = $("input#meats").val();
   var newPizza = newPizza(name, size, veggies, meats);
+  pizzaOrder.newPie(newPizza);
+
 
 
   $("#results").show();
