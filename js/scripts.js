@@ -47,9 +47,9 @@ var pizzaOrder = new PizzaOrder();
 
 function displayPie(PizzaOrderComplete) {
   var yourOrderIsReady = $("#results");
-  var htmlForYou = " ";
-  PizzaOrderComplete.pie.forEach(function(Pizza) {
-    htmlForYou +=  "<li "
+  // var htmlForYou = " ";
+  // PizzaOrderComplete.pie.forEach(function(Pizza) {
+  //   htmlForYou +=  "<li "
 }
 
 $(document).ready(function() {
