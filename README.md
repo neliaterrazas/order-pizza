@@ -1,6 +1,6 @@
 # _Pizza Order_
 
-#### _A webpage to order your perfect pizza. Fill out the forms and let us do the rest., 2/1/2019_
+#### _A webpage to order your perfect pizza. Fill out the forms and let us do the rest, 2/1/2019_
 
 #### By _**Nelia Terrazas**_
 

@@ -1,16 +1,19 @@
-function PizzaOrder () {
-  this.pie = [],
-  this.currentId = 0
-}
+//Pizza Order
+// function PizzaOrder () {
+//   this.pie = pie;
+//   this. = 0
+// }
 
-PizzaOrder.prototype.newPie = function(pies) {
-  pie.id = this.assignId();
-  this.pie.push(pies);
-}
-PizzaOrder.prototype.assignId = function () {
-  this.currentId += 1;
-  return this.currentId;
-}
+// PizzaOrder.prototype.newPie = function(pies) {
+//   pie.id = this.assignId();
+//   this.pie.push(pies);
+// }
+
+
+// PizzaOrder.prototype.assignId = function () {
+//   this.currentId += 1;
+//   return this.currentId;
+// }
 
 function Pizza (size, veggies, meats, cost) {
   this.size = size,
@@ -36,16 +39,20 @@ Pizza.prototype.total = function () {
     console.log(this.cost);
   }
   return this.cost;
+  console.log(this.cost);
 }
 
 Pizza.prototype.yourOrder = function () {
   return this.size + " " + this.veggies + " " + this.meats + " " + this.cost;
+  console.log(yourOrder);
 }
 
+function newPizza(size, veggies, meats, cost) {
+  var pizza = new Pizza(size, veggies, meats, cost);
+  return newPizza;
+}
 
-var pizzaOrder = new PizzaOrder();
-
-function displayPie(PizzaOrderComplete) {
+function displayPizza(PizzaOrderComplete) {
   var yourOrderIsReady = $("#results");
   // var htmlForYou = " ";
   // PizzaOrderComplete.pie.forEach(function(Pizza) {
@@ -62,6 +69,7 @@ $(document).ready(function() {
   var newPizza = newPizza(name, size, veggies, meats);
   pizzaOrder.newPie(newPizza);
   displayPie(PizzaOrder);
+
 
 
 
