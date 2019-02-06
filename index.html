@@ -28,6 +28,8 @@
         <div class="form-group">
           <label for="veggies">Any extra toppings? (Veggies/Fruits)</label>
           <br>
+          <h6>*hold down Ctrl to select multiple*</h6>
+          <br>
           <select class="veggies" id="veggies" multiple>
             <option value="olives">Olives</option>
             <option value="jalapenos">Jalapenos</option>
@@ -38,6 +40,8 @@
         <div class="form-group">
           <label for="meats">Would you like to add any meat today?</label>
           <br>
+          <h6>*hold down Ctrl to select multiple*</h6>
+          <br>
           <select class="meats" id="meats" multiple>
             <option value="pepperoni">Pepperoni</option>
             <option value="ham">Ham</option>
@@ -45,7 +49,7 @@
             <option value="bacon">Bacon</option>
           </select>
         </div>
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn" id="submitPizza">Submit</button>
       </form>
     </div>
     <div class="container" id="results">

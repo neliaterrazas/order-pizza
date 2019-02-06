@@ -52,8 +52,8 @@ function newPizza(size, veggies, meats, cost) {
   return newPizza;
 }
 
-function displayPizza(PizzaOrderComplete) {
-  var yourOrderIsReady = $("#results");
+// function displayPizza(PizzaOrderComplete) {
+//   var yourOrderIsReady = $("#results");
   // var htmlForYou = " ";
   // PizzaOrderComplete.pie.forEach(function(Pizza) {
   //   htmlForYou +=  "<li "
@@ -61,14 +61,17 @@ function displayPizza(PizzaOrderComplete) {
 
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
-  event.preventDefault();
+    $("#orderForm").hide();
+    $("#results").show();
+
+
   var name = $("input#name").val();
   var size = $("input#size").val();
   var veggies = $("input#veggies").val();
   var meats = $("input#meats").val();
-  var newPizza = newPizza(name, size, veggies, meats);
-  pizzaOrder.newPie(newPizza);
-  displayPie(PizzaOrder);
+  var yourPizza = newPizza(name, size, veggies, meats); //not a function because we have already defined?
+  pizza.newPizza(yourPizza);
+  yourPizza(total);
 
 
 
