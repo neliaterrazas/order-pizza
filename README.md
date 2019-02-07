@@ -1,6 +1,6 @@
 # _Pizza Order_
 
-#### _A webpage to order your perfect pizza. Fill out the forms and let us do the rest, 2/1/2019_
+#### _A webpage to order your perfect pizza. Fill out the forms and let me do the rest, 2/6/2019_
 
 #### By _**Nelia Terrazas**_
 
@@ -8,13 +8,15 @@
 
 _This webpage takes user input to customize a simple pizza. Basic pizza includes cheese._
 ## Specs
+_Type in your name, select a size, and choose your toppings_
+..*
+..*
 
-|     Veggies    | Meats           | Size  |
+|     Size    |   Veggies           |   Meats   |
 | ------------- |:-------------:| -----:|
-| Olives      | Pepperoni | M |
-|    Jalapenos  | Ham      |  L |
-| Mushrooms | Sausage      |  XL |
-|Pineapples| Bacon |
+|   $10.00    |   + $0.50  each |   $1.00   |
+|    $15.00  |  ""      |   ""   |
+|   $20.00 |  ""   |   ""   |
 
 ## Setup/Installation Requirements
 
