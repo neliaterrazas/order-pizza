@@ -15,31 +15,33 @@
 //   return this.currentId;
 // }
 
-function Pizza (size, veggies, meats, cost) {
+function Pizza (name, size, veggies, meats, cost) {
+  this.name = name,
   this.size = size,
   this.veggies = veggies,
   this.meats = meats,
   this.cost = 0
 }
 
-Pizza.prototype.total = function () {
+Pizza.prototype.addTotal = function () {
+  var price = 0
   if(this.size ==="medium") {
-    this.cost += 10;
+    price += 10;
   }else if(this.size ==="large") {
-    this.cost += 15;
+    price += 15;
   }else if(this.size ==="xl") {
-    this.cost += 20;
-    console.log(this.cost);
+    price += 20;
+    console.log(price);
   }
   for(var i = 0; i < this.veggies.length; i++) {
-    this.cost += 0.5;
+    price += 0.5;
   }
   for(var i = 0; i < this.meats.length; i++) {
-    this.cost += 1;
-    console.log(this.cost);
+    price += 1;
+    console.log(price);
   }
   return this.cost;
-  console.log(this.cost);
+  console.log(price);
 }
 
 Pizza.prototype.yourOrder = function () {
@@ -47,36 +49,31 @@ Pizza.prototype.yourOrder = function () {
   console.log(yourOrder);
 }
 
-function newPizza(size, veggies, meats, cost) {
-  var pizza = new Pizza(size, veggies, meats, cost);
-  return newPizza;
-}
-
 // function displayPizza(PizzaOrderComplete) {
 //   var yourOrderIsReady = $("#results");
-  // var htmlForYou = " ";
-  // PizzaOrderComplete.pie.forEach(function(Pizza) {
-  //   htmlForYou +=  "<li "
-}
+// var htmlForYou = " ";
+// PizzaOrderComplete.pie.forEach(function(Pizza) {
+//   htmlForYou +=  "<li "
+// }
+
+function newPizza(name, size, veggies, meats, cost) {
+  var pizza = new Pizza(name, size, veggies, meats, cost);
+  return newPizza;
+
 
 $(document).ready(function() {
+
   $("form#formOne").submit(function(event) {
-    $("#orderForm").hide();
-    $("#results").show();
-
-
-  var name = $("input#name").val();
-  var size = $("input#size").val();
-  var veggies = $("input#veggies").val();
-  var meats = $("input#meats").val();
-  var yourPizza = newPizza(name, size, veggies, meats); //not a function because we have already defined?
-  pizza.newPizza(yourPizza);
-  yourPizza(total);
-
-
-
-
-  $("#results").show();
-
+    event.preventDefault();
+    var name = $("input#name").val();
+    var size = $("input#size").val();
+    var veggies = $("input#veggies").val();
+    var meats = $("input#meats").val();
+    var yourPizza = newPizza(name, size, veggies, meats); //not a function because we have already defined?
+    pizza.cost(price);
+    yourPizza(newPizza);
   });
-});
+
+  $("#pizzaReady").text(yourOrder(yourPizza));
+  });
+};
