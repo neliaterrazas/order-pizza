@@ -8,15 +8,15 @@
 
 _This webpage takes user input to customize a simple pizza. Basic pizza includes cheese._
 ## Specs
-_Type in your name, select a size, and choose your toppings_
+_Type in your name, select a size, and choose your toppings. Pizza cost will depend simply on what size you'd like. Toppings are free!_
 ..*
 ..*
 
-|     Size    |   Veggies           |   Meats   |
-| ------------- |:-------------:| -----:|
-|   $10.00    |   + $0.50  each |   $1.00   |
-|    $15.00  |  ""      |   ""   |
-|   $20.00 |  ""   |   ""   |
+|   Option|     Size    |
+|  ---------   | ------------- |
+|   Medium   |   $10.00    |
+|  Large |    $15.00  |
+|   XL   |   $20.00 |
 
 ## Setup/Installation Requirements
 

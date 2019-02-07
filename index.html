@@ -28,9 +28,7 @@
           <div class="form-group">
             <label for="veggies">Any extra toppings? (Veggies/Fruits)</label>
             <br>
-            <h6>*hold down Ctrl to select multiple*</h6>
-            <br>
-            <select class="veggies" id="veggies" multiple="multiple">
+            <select class="veggies" id="veggies">
               <option value="olives">Olives</option>
               <option value="jalapenos">Jalapenos</option>
               <option value="mushrooms">Mushrooms</option>
@@ -40,9 +38,7 @@
           <div class="form-group">
             <label for="meats">Would you like to add any meat today?</label>
             <br>
-            <h6>*hold down Ctrl to select multiple*</h6>
-            <br>
-            <select class="meats" id="meats" multiple="multiple">
+            <select class="meats" id="meats">
               <option value="pepperoni">Pepperoni</option>
               <option value="ham">Ham</option>
               <option value="sausage">Sausage</option>
@@ -54,7 +50,7 @@
       </form>
     </div>
     <div class="container" id="results">
-      <p><span id="pizzaReady">Your order here: <span id="pizzaTotal"></span></span></p>
+      <h2><span id="pizzaReady">Thanks for your order! Your total is: $<span id="pizzaTotal"></span></span></h2>
     </div>
 
   </body>
