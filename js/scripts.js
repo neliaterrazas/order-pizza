@@ -1,20 +1,3 @@
-//Pizza Order
-// function PizzaOrder () {
-//   this.pie = pie;
-//   this. = 0
-// }
-
-// PizzaOrder.prototype.newPie = function(pies) {
-//   pie.id = this.assignId();
-//   this.pie.push(pies);
-// }
-
-
-// PizzaOrder.prototype.assignId = function () {
-//   this.currentId += 1;
-//   return this.currentId;
-// }
-
 function Pizza (name, size, veggies, meats, cost) {
   this.name = name,
   this.size = size,
@@ -24,7 +7,7 @@ function Pizza (name, size, veggies, meats, cost) {
 }
 
 Pizza.prototype.addTotal = function () {
-  var price = 0
+  var price = 0;
   if(this.size ==="medium") {
     price += 10;
   }else if(this.size ==="large") {
@@ -40,21 +23,9 @@ Pizza.prototype.addTotal = function () {
     price += 1;
     console.log(price);
   }
-  return this.cost;
-  console.log(price);
+  return this.cost = price;
+  console.log(this);
 }
-
-Pizza.prototype.yourOrder = function () {
-  return this.size + " " + this.veggies + " " + this.meats + " " + this.cost;
-  console.log(yourOrder);
-}
-
-// function displayPizza(PizzaOrderComplete) {
-//   var yourOrderIsReady = $("#results");
-// var htmlForYou = " ";
-// PizzaOrderComplete.pie.forEach(function(Pizza) {
-//   htmlForYou +=  "<li "
-// }
 
 function newPizza(name, size, veggies, meats, cost) {
   var pizza = new Pizza(name, size, veggies, meats, cost);
@@ -62,6 +33,7 @@ function newPizza(name, size, veggies, meats, cost) {
 
 
 $(document).ready(function() {
+  pizza
 
   $("form#formOne").submit(function(event) {
     event.preventDefault();
@@ -69,11 +41,17 @@ $(document).ready(function() {
     var size = $("input#size").val();
     var veggies = $("input#veggies").val();
     var meats = $("input#meats").val();
-    var yourPizza = newPizza(name, size, veggies, meats); //not a function because we have already defined?
+    var yourOrder = newPizza(name, size, veggies, meats); 
     pizza.cost(price);
     yourPizza(newPizza);
   });
 
+  new Pizza = function () {
+    return this.size + " " + this.veggies + " " + this.meats + " " + this.cost;
+    console.log(yourOrder);
+  }
+
   $("#pizzaReady").text(yourOrder(yourPizza));
   });
+
 };

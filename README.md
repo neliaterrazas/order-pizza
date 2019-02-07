@@ -7,6 +7,14 @@
 ## Description
 
 _This webpage takes user input to customize a simple pizza. Basic pizza includes cheese._
+## Specs
+
+|     Veggies    | Meats           | Size  |
+| ------------- |:-------------:| -----:|
+| Olives      | Pepperoni | M |
+|    Jalapenos  | Ham      |  L |
+| Mushrooms | Sausage      |  XL |
+|Pineapples| Bacon |
 
 ## Setup/Installation Requirements
 
